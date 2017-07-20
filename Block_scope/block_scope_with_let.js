@@ -7,6 +7,7 @@ function foo(x,y){
         x = y;
         y = tmp;
 
+        let tmp = y;
         console.log(tmp);
     }
     console.log(tmp+"outside");
