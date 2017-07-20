@@ -1,9 +1,10 @@
 var obj = {
     id: 42,
     foo: function foo() {
+        var self = this;
         setTimeout(function(){
-            console.log( this.id );
+            console.log( self.id );
         },1000)
     }
 }
-obj.foo(); // It will get undefined
+obj.foo(); // It will get 42
